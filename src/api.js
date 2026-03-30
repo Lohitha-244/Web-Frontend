@@ -1,10 +1,11 @@
 import axios from 'axios';
 //9bt7tsng-8000.inc1.devtunnels.ms/
-const BASE_URL = process.env.REACT_APP_API_URL || 'https://9bt7tsng-8000.inc1.devtunnels.ms/';
+// const BASE_URL = process.env.REACT_APP_API_URL || 'https://9bt7tsng-8000.inc1.devtunnels.ms/';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000/';
 
 const api = axios.create({
   baseURL: BASE_URL,
-  timeout: 15000,
+  timeout: 30000,
 });
 
 // Auto-attach Authorization token
